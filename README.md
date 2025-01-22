@@ -1,74 +1,71 @@
-Pollify - Interactive Polling Application
+# Pollify - Interactive Polling Application
 
 Pollify is a real-time polling application built using the MERN (MongoDB, Express.js, React, Node.js) stack. It enables users to create polls, vote, and view results dynamically.
 
-Features
+## Features
 
-Responsive Navigation Bar: Includes links to different sections and a hamburger menu for mobile users.
+- **Responsive Navigation Bar**: Includes links to different sections and a hamburger menu for mobile users.
+- **Dark Mode Support**: Toggle between light and dark themes.
+- **Real-Time Polling**: Create, vote, and view live poll results.
+- **User Authentication**: Sign up, log in, and manage user accounts.
+- **Leaderboard**: Track top contributors and popular polls.
 
-Dark Mode Support: Toggle between light and dark themes.
+## Technology Stack
 
-Real-Time Polling: Create, vote, and view live poll results.
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Icons**: React Icons (e.g., FiSun, FiMoon, AiOutlineMenu, AiOutlineClose)
 
-User Authentication: Sign up, log in, and manage user accounts.
+## Installation
 
-Leaderboard: Track top contributors and popular polls.
-
-Technology Stack
-
-Frontend: React.js, Tailwind CSS
-
-Backend: Node.js, Express.js
-
-Database: MongoDB
-
-Icons: React Icons (e.g., FiSun, FiMoon, AiOutlineMenu, AiOutlineClose)
-
-Installation
-
-Clone the repository
-
+### Clone the repository
+```bash
 git clone https://github.com/yourusername/pollify.git
 cd pollify
+```
 
-Install dependencies
+### Install dependencies
 
-Install server dependencies:
-
+**Install server dependencies:**
+```bash
 cd server
 npm install
+```
 
-Install client dependencies:
-
+**Install client dependencies:**
+```bash
 cd client
 npm install
+```
 
-Set up environment variables
-
-Create a .env file in the server directory and add the following:
-
+### Set up environment variables
+Create a `.env` file in the `server` directory and add the following:
+```env
 MONGO_URI=<your-mongodb-connection-string>
 JWT_SECRET=<your-secret-key>
 PORT=5000
+```
 
-Start the application
+### Start the application
 
-Start the server:
-
+**Start the server:**
+```bash
 cd server
 npm start
+```
 
-Start the client:
-
+**Start the client:**
+```bash
 cd client
 npm start
+```
 
-Access the application
+### Access the application
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-Open your browser and navigate to http://localhost:3000.
-
-Folder Structure
-
+## Folder Structure
+```
 pollify/
 ├── client/              # React.js frontend
 │   ├── public/          # Static files
@@ -85,37 +82,34 @@ pollify/
 │   ├── middleware/      # Authentication middleware
 │   └── package.json     # Server dependencies and scripts
 └── README.md            # Project documentation
+```
 
-Responsive Navbar Features
+## Responsive Navbar Features
 
-Dynamic Links: Links to Home, Show Poll, Create Poll, Leaderboard, Sign Up, and Log In.
+- **Dynamic Links**: Links to Home, Show Poll, Create Poll, Leaderboard, Sign Up, and Log In.
+- **Hamburger Menu**: Visible on smaller screens.
+- **Dark Mode Toggle**: Switch between light and dark themes using FiSun and FiMoon icons.
+- **Close Button**: Closes the mobile menu.
 
-Hamburger Menu: Visible on smaller screens.
+## Contribution Guidelines
 
-Dark Mode Toggle: Switch between light and dark themes using FiSun and FiMoon icons.
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature description"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-Close Button: Closes the mobile menu.
+## License
 
-Contribution Guidelines
-
-Fork the repository.
-
-Create a feature branch:
-
-git checkout -b feature-name
-
-Commit your changes:
-
-git commit -m "Add feature description"
-
-Push to your branch:
-
-git push origin feature-name
-
-Open a pull request.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Happy polling with Pollify! 🚀
