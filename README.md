@@ -17,70 +17,17 @@ Pollify is a real-time polling application built using the MERN (MongoDB, Expres
 - **Database**: MongoDB
 - **Icons**: React Icons (e.g., FiSun, FiMoon, AiOutlineMenu, AiOutlineClose)
 
-## Installation
+## Folder Structure 
 
-### Clone the repository
-```bash
-git clone https://github.com/yourusername/pollify.git
-cd pollify
-```
-
-### Install dependencies
-
-**Install server dependencies:**
-```bash
-cd server
-npm install
-```
-
-**Install client dependencies:**
-```bash
-cd client
-npm install
-```
-
-### Set up environment variables
-Create a `.env` file in the `server` directory and add the following:
-```env
-MONGO_URI=<your-mongodb-connection-string>
-JWT_SECRET=<your-secret-key>
-PORT=5000
-```
-
-### Start the application
-
-**Start the server:**
-```bash
-cd server
-npm start
-```
-
-**Start the client:**
-```bash
-cd client
-npm start
-```
-
-### Access the application
-Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
-
-## Folder Structure
 ```
 pollify/
 ├── client/              # React.js frontend
 │   ├── public/          # Static files
-│   ├── src/             # React components and pages
-│       ├── components/  # Reusable UI components (e.g., Navbar)
-│       ├── pages/       # Application pages
-│       ├── styles/      # CSS and Tailwind configuration
+│   ├── src/             # Application source files
+│   ├── components/      # Reusable UI components (e.g., Navbar)
+│   ├── pages/           # Application pages
+│   ├── styles/          # CSS and Tailwind configuration
 │   └── package.json     # Client dependencies and scripts
-├── server/              # Node.js backend
-│   ├── config/          # Database and server configuration
-│   ├── models/          # Mongoose models
-│   ├── routes/          # API routes
-│   ├── controllers/     # Request handlers
-│   ├── middleware/      # Authentication middleware
-│   └── package.json     # Server dependencies and scripts
 └── README.md            # Project documentation
 ```
 
@@ -110,6 +57,6 @@ pollify/
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Please look at the [LICENSE](LICENSE) file for details.
 
 Happy polling with Pollify! 🚀
